@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <script src="./main.js" defer></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background: #f4f4f4;
+        min-height: 100vh;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(76, 88, 234);
+        color: white;
+        height: 70px;
+        padding: 0 20px;
+      }
+
+      header h1 {
+        color: aqua;
+      }
+
+      header nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      header nav a:hover {
+        color: aqua;
+      }
+
+      .header-btn {
+        padding: 12px 25px;
+        border: none;
+        border-radius: 30px;
+        background: repeating-radial-gradient(white, pink, skyblue);
+        cursor: pointer;
+        animation: blinking 1s infinite alternate;
+        font-weight: bold;
+      }
+
+      @keyframes blinking {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0.3;
+        }
+      }
+
+      /* Form Container */
+      .container {
+        width: 400px;
+        background: white;
+        margin: 40px auto;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #007bff;
+      }
+
+      textarea {
+        resize: none;
+        height: 80px;
+      }
+
+      .submit-btn {
+        width: 100%;
+        padding: 12px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .submit-btn:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>StudentReg</h1>
+
+      <nav><a href="#">About</a></nav>
+      <nav><a href="#">Course</a></nav>
+      <nav><a href="#">Fee</a></nav>
+      <nav><a href="#">Admission</a></nav>
+
+      <button class="header-btn">Registration Here!</button>
+    </header>
+
+    <div class="container">
+      <h2>Student Registration Form</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="name">Student Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Student Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="fathername">Father Name</label>
+          <input
+            type="text"
+            id="fathername"
+            name="fathername"
+            placeholder="Enter Father Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea
+            id="address"
+            name="address"
+            placeholder="Enter Address"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">Mobile Number</label>
+          <input
+            type="tel"
+            id="mobile"
+            name="mobile"
+            pattern="[0-9]{10}"
+            placeholder="Enter 10 Digit Mobile Number"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="date">Registration Date</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
