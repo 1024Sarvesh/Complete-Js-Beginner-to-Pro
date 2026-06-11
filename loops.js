@@ -73,9 +73,9 @@
 
 
 
-    let gameNum ="35";
-   let UserNum= prompt("guess the gameNum");
-   while(UserNum !== gameNum){
-     UserNum= prompt("You Entered Wrong Num. guess Again");
-   }
-   console.log("congratulations you entered the right number")
+  //   let gameNum ="35";
+  //  let UserNum= prompt("guess the gameNum");
+  //  while(UserNum !== gameNum){
+  //    UserNum= prompt("You Entered Wrong Num. guess Again");
+  //  }
+  //  console.log("congratulations you entered the right number")
