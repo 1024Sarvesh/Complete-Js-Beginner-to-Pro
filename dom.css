@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    background-color: yellow;
+}
+body{
+    background-color: pink;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    margin: 10px;
+    border: 1px solid black;
+}
