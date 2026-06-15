@@ -17,3 +17,19 @@ body{
     margin: 10px;
     border: 1px solid black;
 }
+#box{
+    height: 150px;
+    width: 100px;
+    background-color: yellow;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.newpara{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: brown;
+}
+.newclass{
+    background-color: green;
+}
