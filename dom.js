@@ -9,66 +9,45 @@
 // console.log(buttonEl)
 // console.dir(buttonEl)
 
-
 // --------------------------------------document.getElementsByClassName
-
 
 // let headings = document.getElementsByClassName("my-class");
 // console.log(headings)
 // console.dir(headings)
 
-
 // -----------------------------------------------document.getElementsByTagName
-
 
 // let parahs = document.getElementsByTagName("p");
 // console.log(parahs)
 // console.dir(parahs)
 
-
 // --------------------------------------------querySelector
-
 
 // let FirstEl = document.querySelector("p");  // 1st element
 // console.dir(FirstEl)
 
-
 // -----------------------------------------------querySlecterAll
-
 
 // let AllElements = document.querySelectorAll("p");  // nodelist
 // console.dir(AllElements)
-
-
 
 // --------------------------------------TagName
 
 // const pEl = document.querySelector("div");
 // let text = pEl.innerText = "Sarvesh Kumar";
-// console.log(pEl.innerHTML) 
+// console.log(pEl.innerHTML)
 // console.log(text)
 
 // const div = document.querySelector("div")
 // console.dir(div)
 
-
 // const h1El  = document.querySelector("h1")
 // console.log(h1El)
-
-
-
-
-
-
-
 
 // ------------------------------------------------qestion1
 
 // const h2El = document.querySelector("h2");
 // h2El.innerText = h2El.innerText + " from apna collage students";
-
-
-
 
 // ------------------------------------------------question2
 
@@ -78,7 +57,6 @@
 // divs.innerText = `new unique value of ${idx}`
 // idx++;
 // }
-
 
 // ------------------------------------------------getAttribute
 
@@ -90,18 +68,15 @@
 // let name = div.getAttribute("name");
 // console.log(name)
 
-
 // const pEl = document.querySelector("p");
 // console.log(pEl);
 // const pclass = pEl.getAttribute("class")
 // console.log(pclass)
 
-
 // // ----------------------------------------------setAttribute
 
 // let newclass = pEl.setAttribute("class","newclass");
 // console.log(newclass)
-
 
 // // ---------------------------------------node.style
 
@@ -110,9 +85,7 @@
 // div.style.fontSize = "24px";
 // div.innerText = "HELLO!";
 
-
 // ------------------------------------------------- insert & delete Elements
-
 
 // const ButtonEl = document.createElement("button");
 // ButtonEl.innerText = "Click me!";
@@ -122,17 +95,14 @@
 // // div.before(ButtonEl)
 // div.after(ButtonEl)
 
-
 // const H1El = document.createElement("h1");
 // H1El.innerHTML = "<i>Hi! I am New</i>"
 // document.querySelector("body").prepend(H1El)
-
 
 // let pEl = document.querySelector("p");
 // pEl.remove();
 
 // H1El.remove()
-
 
 // -------------------------------------------------------question 1
 
@@ -144,10 +114,7 @@
 // btnEl.style.cursor = "pointer";
 // document.querySelector("body").prepend(btnEl)
 
-
-
 // ----------------------------------------------------------question 2
-
 
 // const pEl = document.querySelector("p")
 // console.log(pEl.getAttribute("class"))
@@ -155,13 +122,7 @@
 // console.log(pEl.classList.add("newclass"))
 // console.log(pEl.classList.remove("newclass"))
 
-
-
-
-
-// ----------------------------------------- mdn code 
-
-
+// ----------------------------------------- mdn code
 
 const div = document.createElement("div");
 div.classList = "foo"; // forwarded to classList.value
@@ -197,3 +158,19 @@ div.classList.remove(...cls);
 
 // replace class "foo" with class "bar"
 div.classList.replace("foo", "bar");
+
+// ----------------------------------------- classlist all methods
+
+// add()	    Adds one or more tokens to the list
+// contains()	Returns true if the list contains a class
+// entries()	Returns an Iterator with key/value pairs from the list
+// forEach()	Executes a callback function for each token in the list
+// item()	    Returns the token at a specified index
+// keys()	    Returns an Iterator with the keys in the list
+// length	    Returns the number of tokens in the list
+// remove()	    Removes one or more tokens from the list
+// replace()	Replaces a token in the list
+// supports()	Returns true if a token is one of an attribute's supported tokens
+// toggle()	    Toggles between tokens in the list
+// value	    Returns the token list as a string
+// values()	    Returns an Iterator with the values in the list
