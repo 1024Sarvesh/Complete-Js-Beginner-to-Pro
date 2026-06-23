@@ -135,3 +135,121 @@
 // let engObj = new Engineer("chemical engineer");
 
 // console.log(engObj)
+
+
+
+
+
+
+
+// class Person{
+//     constructor(name){
+//        this.species = "homo sapiens"
+//        this.name = name;
+//     }
+//     eat(){
+//         console.log("eat")
+//     }
+// }
+
+
+// class Engineer extends Person{
+
+//     constructor(name){
+//         super(name);   //to call the parent class constructor
+       
+//     }
+
+//     work(){
+//         super.eat();
+//         console.log("solve problems,built something")
+//     }
+// }
+
+// let engObj = new Engineer("Sarvesh ");
+
+// console.log(engObj)
+
+
+
+
+
+// ------------------------------------question 1-------------------------------
+// you are creating a website for your collage. create a class User with 2 properTies , name and email. it also has a method called viweData() that allows to user to viwe your data?
+
+// const DATA = "secret information";
+
+// class User{
+    //     constructor(name,email){
+        //         this.name = name;
+        //         this.email = email;
+        //     }
+        
+        //     viewdata(){
+            //         console.log("website data is ", DATA)
+            //     }
+            
+            // } 
+            
+            
+            // let stu1 = new User("Sarvesh","a@agmail.com")
+// let stu2 = new User("Sarvesh Kumar","a@akgmail.com")
+
+
+
+
+
+
+
+
+// ------------------------------------------------------question 2----------------------
+// create a new class called admin which inherits from User . add new mthod called editdata to admin that allows it to edit in website?
+
+// const DATA = "secret information";
+// class User{
+//     constructor(name,email){
+//         this.name = name;
+//         this.email = email;
+//     }
+
+//     viewdata(){
+//         console.log("website data is ", DATA)
+//     }
+
+// } 
+
+// class Admin extends User{
+
+//     constructor(name,email){
+//         super(name,email)
+//     }
+
+//     editData(){
+//         DATA:"some new value"
+//     }
+// }
+
+//  let stu1 = new User("Sarvesh","a@agmail.com")
+// let stu2 = new User("Sarvesh Kumar","a@akgmail.com")
+
+// let admin1 = new Admin("dean","dean@collage.com")
+
+
+
+
+// ---------------------------------------ERROR HANDLING---------------------------
+
+
+// a = 8;
+// b = 10;
+// console.log(a+b)
+// console.log(a-b)
+// try{
+
+//     console.log(a-c)
+// }catch(err){
+//     console.log(err)
+// }
+// console.log(a*b)
+// console.log(a/b)
+// console.log(a%b)
